@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>左导航右内容</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <style>
+        .left-module {
+            margin-bottom : 30px;
+        }
+        .tags {
+            line-height: 30px;
+        }
+        .footer {
+            border-top : 1px solid #ddd;
+            padding : 20px 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid" style="margin-bottom: 10px;">
+    <nav class="navbar navbar-default" style="padding: 10px 0 10px 0;">
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">导航1</a></li>
+                <li role="presentation"><a href="#">导航2</a></li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        下拉菜单<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">作者</a></li>
+                        <li><a href="#">作品</a></li>
+                        <li><a href="#">签名</a></li>
+                        <li><a href="#">描述</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3" style="padding:0 10px 0 10px;">
+            <div class="left-module">
+                <div class="input-group">
+                    <input type="text" placeholder="NBA" id="search_key" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            搜索<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">作品</a></li>
+                            <li><a href="#">文章</a></li>
+                            <li><a href="#">商家</a></li>
+                            <li><a href="#">视频</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-module">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">开发文章</h5>
+                    </div>
+                    <div class="list-group">
+                        <a class="list-group-item active" href="#">
+                            <h4>前端开发</h4>
+                            <p class="list-group-item-text">包括HTML、CSS、JS、PS、AS、jQuery、grunt、glup、bower等单词的拼写。</p>
+                        </a>
+                        <a class="list-group-item" href="#">
+                            <h4>后端开发</h4>
+                            <p class="list-group-item-text">包括PHP、Net、JAVA、C#、NodeJs等单词的拼写。</p>
+                        </a>
+                        <a class="list-group-item" href="#">
+                            <h4>闲言碎语</h4>
+                            <p class="list-group-item-text">闲说乱言碎话滥语，非小说，只讲那些发生在我们生命中的故事。</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-module">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">热门个文章</h5>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            深入理解Javascript
+                            <span class="badge">Gray Liu</span>
+                        </li>
+                        <li class="list-group-item">
+                            JavaScript的面向对象
+                            <span class="badge">Stephen Henry</span>
+                        </li>
+                        <li class="list-group-item">
+                            细说Mongodb的分片
+                            <span class="badge">Harry Potter</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="left-module">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">热门标签</h4>
+                    </div>
+                    <div class="panel-body tags">
+                        <a href="#" class="label label-info">身边的故事</a>
+                        <a href="#" class="label label-success">谈谈情</a>
+                        <a href="#" class="label label-warning">说说爱</a>
+                        <a href="#" class="label label-danger">HTML</a>
+                        <a href="#" class="label label-default">CSS</a>
+                        <a href="#" class="label label-primary">PHP</a>
+                        <a href="#" class="label label-danger">JS</a>
+                        <a href="#" class="label label-info">nodeJs</a>
+                        <a href="#" class="label label-default">Net</a>
+                        <a href="#" class="label label-warning">JAVA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9" style="padding:0 10px 0 10px;">
+            <ol class="breadcrumb">
+                <li><a href="#">IT互联网</a></li>
+                <li><a href="#">前端开发</a></li>
+                <li class="active">Bootstrap</li>
+            </ol>
+            <div style="margin-bottom: 30px;">
+                <h2>这么近，那么远—移动互联网人性拷问</h2>
+                <p>先问你两个问题：1.你有多久没有看过你最好的朋友了？ 2.你有多久没有看过手机了？对于第一个问题，大部分人也许要思考一下才能回答，而对于第二个问题，可能就要简单多了，因为此时此刻你正在用手机阅读这篇文章。</p>
+                <p>今天我们要讨论的话题是，在网络无所不在、业务无所不能的移动互联网时代，你丢了些什么？</p>
+                <p>在德国召开的一场数码科技会议公布的数据显示，2013年全球共有18.3亿部智能手机，每位手机用户平均每天查看 150次手机。换言之，除了休息时间外，每人平均每6分半钟查看一次手机。手机综合症正在成为社会的一种新型流行病，在公交车、地铁站、公园、餐厅、家里、单位……“低头族”、“屏奴”正在快速膨胀，迅速占领了世界的各个角落。很多人每隔一段时间就要按开密码看一眼手机，刷微博、刷微信，或者看照片，又或者什么都不干就看一眼再锁掉。</p>
+            </div>
+            <div style="margin-bottom: 30px;">
+                <h2>这么近，那么远—移动互联网人性拷问</h2>
+                <p>先问你两个问题：1.你有多久没有看过你最好的朋友了？ 2.你有多久没有看过手机了？对于第一个问题，大部分人也许要思考一下才能回答，而对于第二个问题，可能就要简单多了，因为此时此刻你正在用手机阅读这篇文章。</p>
+                <p>今天我们要讨论的话题是，在网络无所不在、业务无所不能的移动互联网时代，你丢了些什么？</p>
+                <p>在德国召开的一场数码科技会议公布的数据显示，2013年全球共有18.3亿部智能手机，每位手机用户平均每天查看 150次手机。换言之，除了休息时间外，每人平均每6分半钟查看一次手机。手机综合症正在成为社会的一种新型流行病，在公交车、地铁站、公园、餐厅、家里、单位……“低头族”、“屏奴”正在快速膨胀，迅速占领了世界的各个角落。很多人每隔一段时间就要按开密码看一眼手机，刷微博、刷微信，或者看照片，又或者什么都不干就看一眼再锁掉。</p>
+            </div>
+            <div style="margin-bottom: 30px;">
+                <h2>这么近，那么远—移动互联网人性拷问</h2>
+                <p>先问你两个问题：1.你有多久没有看过你最好的朋友了？ 2.你有多久没有看过手机了？对于第一个问题，大部分人也许要思考一下才能回答，而对于第二个问题，可能就要简单多了，因为此时此刻你正在用手机阅读这篇文章。</p>
+                <p>今天我们要讨论的话题是，在网络无所不在、业务无所不能的移动互联网时代，你丢了些什么？</p>
+                <p>在德国召开的一场数码科技会议公布的数据显示，2013年全球共有18.3亿部智能手机，每位手机用户平均每天查看 150次手机。换言之，除了休息时间外，每人平均每6分半钟查看一次手机。手机综合症正在成为社会的一种新型流行病，在公交车、地铁站、公园、餐厅、家里、单位……“低头族”、“屏奴”正在快速膨胀，迅速占领了世界的各个角落。很多人每隔一段时间就要按开密码看一眼手机，刷微博、刷微信，或者看照片，又或者什么都不干就看一眼再锁掉。</p>
+            </div>
+            <div style="margin-bottom: 30px;">
+                <h2>这么近，那么远—移动互联网人性拷问</h2>
+                <p>先问你两个问题：1.你有多久没有看过你最好的朋友了？ 2.你有多久没有看过手机了？对于第一个问题，大部分人也许要思考一下才能回答，而对于第二个问题，可能就要简单多了，因为此时此刻你正在用手机阅读这篇文章。</p>
+                <p>今天我们要讨论的话题是，在网络无所不在、业务无所不能的移动互联网时代，你丢了些什么？</p>
+                <p>在德国召开的一场数码科技会议公布的数据显示，2013年全球共有18.3亿部智能手机，每位手机用户平均每天查看 150次手机。换言之，除了休息时间外，每人平均每6分半钟查看一次手机。手机综合症正在成为社会的一种新型流行病，在公交车、地铁站、公园、餐厅、家里、单位……“低头族”、“屏奴”正在快速膨胀，迅速占领了世界的各个角落。很多人每隔一段时间就要按开密码看一眼手机，刷微博、刷微信，或者看照片，又或者什么都不干就看一眼再锁掉。</p>
+            </div>
+
+            <!--<nav>-->
+            <!--<ul class="pager">-->
+            <!--<li class="previous"><a href="#"><span>&larr;</span>上一页</a></li>-->
+            <!--<li class="next"><a href="#">下一页<span>&rarr;</span></a></li>-->
+            <!--</ul>-->
+            <!--</nav>-->
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<ul class="footer list-inline">
+    <li>&copy;2014 云淡然</li>
+    <li><a href=" http://qianduanblog.com/3150.html" target="_blank">bootstrap3学习1：响应式布局layout</a>
+    </li>
+</ul>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

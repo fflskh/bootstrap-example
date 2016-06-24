@@ -1,0 +1,26 @@
+{
+  "name": "my-socket.io",
+  "homepage": "https://github.com/socketio/socket.io",
+  "authors": [
+    "liuhao <253804009@qq.com>"
+  ],
+  "description": "bootstrap and socket.io and express",
+  "main": "index.js",
+  "keywords": [
+    "socket.io",
+    "bootstrap",
+    "express"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "directory" : "public/bower_components",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
